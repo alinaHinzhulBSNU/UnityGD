@@ -3,9 +3,8 @@ using DG.Tweening;
 
 public class DOTweenDemo : MonoBehaviour
 {
-	private Transform tasks; // меню
-
-	private bool isVisible; // видимість меню
+    private Transform tasks; // меню
+    private bool isVisible; // видимість меню
     
     private float tasksInitialPosition; // початкове положення меню
     private float buttonInitialPosition; // початкове положення кнопки
@@ -15,15 +14,15 @@ public class DOTweenDemo : MonoBehaviour
     private float buttonShift = -10; // зсув кнопки
 
     void Start()
-	{
-		isVisible = true;
+    {
+        isVisible = true;
         tasks = GameObject.FindWithTag("tasks").GetComponent<Transform>();
         tasksInitialPosition = tasks.position.x;
         buttonInitialPosition = transform.position.x;
     }
-
-	public void Animate()
-	{
+    
+    public void Animate()
+    {
         if (isVisible)
         {
             tasks.DOMoveX(tasksShift, duration); // перемістити меню
