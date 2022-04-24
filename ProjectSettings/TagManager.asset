@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - tasks
-  - tree
+  - header
+  - content
   layers:
   - Default
   - TransparentFX
@@ -48,4 +48,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 64835905
+    locked: 0
+  - name: Tooltip
+    uniqueID: 990742445
     locked: 0
